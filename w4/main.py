@@ -68,18 +68,21 @@ streets.")
             if timeframe == "pm":
                 time = time - 1200
             print(f"Since it's {time}, you can probably take the freeway \
-without too \
-        much traffic.")
+without too much traffic.")
         coffee = input("Did you make coffee this morning? Y / N \n").lower()
         if coffee == "n":
             if time < 700:
                 wait_time = 700 - 40 - time
                 print(f"Hi Top opens in {wait_time} minutes, so you can get \
 coffee then.")
-            elif time >= 700 and time < 1400:
-                print("Hi Top is open, so you can pick up coffee.")
+            elif (time >= 900 and time < 1400) and (day == "Tuesday" or
+                                                    day == "Thursday"):
+                print("Hi Top is open, so you can pick up coffee on your \
+prep.")
             else:
                 print("Just grab coffee at school.")
+        else:
+            print("Nicely done!")
         decision = input("Are you ready for the next day? Y or N\n").lower()
         if decision == "n":
             break
