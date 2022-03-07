@@ -26,7 +26,7 @@ def summation(num1, num2):
 
 if budget_builder == "Y" or budget_builder == "y":
     builder = True
-    while builder:   
+    while builder:
         new_category = input("What is the name of the category you wish to \
 include?\n").title()
         budget_categories[new_category] = []
