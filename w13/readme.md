@@ -1,0 +1,2 @@
+# learn_together_w13
+    For this learn_together, I decided to use the two turtle lessons to create a connect the dots based on the Damien Hirst paitings. The dots are arranged randomly and then the turtle color is randomly picked to have the user match the dots of the same color of the turtle. 
